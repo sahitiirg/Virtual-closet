@@ -1,7 +1,7 @@
 const avatar = {
-    skin: #FFD9C2
-    hair: #3D2314
-    eyes: "#A19664"
+    skin: "#FFD9C2",
+    hair: "#3D2314",
+    eyes: "#A19664",
     base: "#E8E2DC"
 };
 
