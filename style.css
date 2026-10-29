@@ -1,0 +1,7 @@
+body { font-family: system-ui, sans-serif; margin: 0; padding: 16px; background: #faf7f5; }
+.layout { display: grid; grid-template-columns: 1fr 2fr ; gap: 24px; }
+.preview { background: white; border-radius: 12px; padding: 16px; }
+#avatar { width: 100%; max-height: 70vh; border-radius: 1px dashed #ccc; }
+@media (max-width: 700px) {
+  .layout { grid-template-columns: 1fr; }
+}
