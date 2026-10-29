@@ -52,4 +52,21 @@ function drawAvatar() {
     `;
 }
 
+// Load saved colors, if any
+try {
+  const saved = JSON.parse(localStorage.getItem("avatar"));
+  if (saved) Object.assign(avatar, saved);
+} catch (e) {}
+
+// Connect each picker to a part of the avatar
+["skin", "hair", "eyes", "base"].forEach(part => {
+  const input = document.getElementById("pick-" + part);
+  input.value = avatar[part];
+  input.addEventListener("input", () => {
+    avatar[part] = input.value;
+    drawAvatar();
+    localStorage.setItem("avatar", JSON.stringify(avatar));
+  });
+});
+
 drawAvatar();

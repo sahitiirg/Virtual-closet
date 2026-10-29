@@ -5,3 +5,6 @@ body { font-family: system-ui, sans-serif; margin: 0; padding: 16px; background:
 @media (max-width: 700px) {
   .layout { grid-template-columns: 1fr; }
 }
+.maker { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.maker label { display: flex; align-items: center; gap: 6px; font-size: 14px; }
+.maker input[type="color"] { width: 36px; height: 28px; border: none; background: none; cursor: pointer; }
